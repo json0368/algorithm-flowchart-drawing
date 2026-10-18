@@ -1,0 +1,135 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram id="preprocess-eight-b" name="图3-2(b) 删除普通空格">
+    <mxGraphModel dx="1427" dy="1414" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="700" pageHeight="1010" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KnD9k6SCYAWK8gHB3t1H-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="830" width="669" x="10" y="-7" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_start" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;ellipse;spacing=1;" value="开始" vertex="1">
+          <mxGeometry height="40" width="180" x="90" y="41" as="geometry" />
+        </mxCell>
+        <mxCell id="KnD9k6SCYAWK8gHB3t1H-3" edge="1" parent="1" source="cell_init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="cell_outer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_init" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rounded=0;spacing=4;" value="读取规则总数 n&#xa;将 i 初始化为 0" vertex="1">
+          <mxGeometry height="50" width="240" x="60" y="106" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_outer" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rhombus;spacing=2;" value="i 小于规则总数 n 吗？" vertex="1">
+          <mxGeometry height="66" width="280" x="40" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_end" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;ellipse;spacing=1;" value="结束" vertex="1">
+          <mxGeometry height="40" width="160" x="435" y="208" as="geometry" />
+        </mxCell>
+        <mxCell id="KnD9k6SCYAWK8gHB3t1H-7" edge="1" parent="1" source="cell_load" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="cell_inner">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_load" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rounded=0;spacing=4;" value="取第 i 条规则的长度 len&#xa;将字符下标 j 初始化为 0" vertex="1">
+          <mxGeometry height="50" width="240" x="60" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_inner" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rhombus;spacing=2;" value="j 小于有效长度 len 吗？" vertex="1">
+          <mxGeometry height="66" width="280" x="40" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_resize" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rounded=0;spacing=4;" value="将第 i 条规则截取为&#xa;长度 len 的字符串" vertex="1">
+          <mxGeometry height="50" width="235" x="392" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="KnD9k6SCYAWK8gHB3t1H-13" edge="1" parent="1" source="cell_i-inc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" target="cell_outer">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="647" y="442" />
+              <mxPoint x="647" y="173" />
+              <mxPoint x="250" y="173" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cell_i-inc" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rounded=0;spacing=4;" value="i 加一，处理下一条规则" vertex="1">
+          <mxGeometry height="45" width="235" x="392" y="419" as="geometry" />
+        </mxCell>
+        <mxCell id="KnD9k6SCYAWK8gHB3t1H-8" edge="1" parent="1" source="cell_space" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="cell_k-init">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KnD9k6SCYAWK8gHB3t1H-9" connectable="0" parent="KnD9k6SCYAWK8gHB3t1H-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;是&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1327" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cell_space" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rhombus;spacing=2;" value="第 j 个字符是普通空格吗？" vertex="1">
+          <mxGeometry height="66" width="280" x="40" y="482" as="geometry" />
+        </mxCell>
+        <mxCell id="KnD9k6SCYAWK8gHB3t1H-6" edge="1" parent="1" source="cell_j-inc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="cell_inner">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_j-inc" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rounded=0;spacing=4;" value="j 加一，检查下一字符" vertex="1">
+          <mxGeometry height="45" width="240" x="60" y="597" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_k-init" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rounded=0;spacing=4;" value="将移动下标 k 初始化为 j" vertex="1">
+          <mxGeometry height="45" width="235" x="392" y="492.5" as="geometry" />
+        </mxCell>
+        <mxCell id="KnD9k6SCYAWK8gHB3t1H-10" edge="1" parent="1" source="cell_k-test" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="cell_shrink">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KnD9k6SCYAWK8gHB3t1H-11" connectable="0" parent="KnD9k6SCYAWK8gHB3t1H-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;否&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1126" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cell_k-test" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rhombus;spacing=2;" value="k 小于 len 减一吗？" vertex="1">
+          <mxGeometry height="66" width="280" x="369.5" y="569" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_copy" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rounded=0;spacing=4;" value="将第 k+1 个字符复制到&#xa;第 k 个字符的位置" vertex="1">
+          <mxGeometry height="50" width="235" x="392" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="KnD9k6SCYAWK8gHB3t1H-1" edge="1" parent="1" source="cell_k-inc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="cell_k-test">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="668" y="793" />
+              <mxPoint x="668" y="602" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cell_k-inc" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rounded=0;spacing=4;" value="k 加一，继续移动字符" vertex="1">
+          <mxGeometry height="45" width="235" x="392" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="KnD9k6SCYAWK8gHB3t1H-5" edge="1" parent="1" source="cell_shrink" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180.0588235294117" y="643.5882352941176" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cell_shrink" parent="1" style="whiteSpace=wrap;html=0;align=center;verticalAlign=middle;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;strokeColor=#000000;strokeWidth=1;fillColor=#FFFFFF;rounded=0;spacing=4;" value="len 减一，缩短有效长度&#xa;j 减一，准备重查当前位置" vertex="1">
+          <mxGeometry height="50" width="240" x="60" y="691" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_e0" edge="1" parent="1" source="cell_start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#000000;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cell_init" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_e3" edge="1" parent="1" source="cell_outer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#000000;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cell_load" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_e4" edge="1" parent="1" source="cell_outer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#000000;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="cell_end" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_e7" edge="1" parent="1" source="cell_inner" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#000000;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cell_space" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_e8" edge="1" parent="1" source="cell_inner" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#000000;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="cell_resize" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_e9" edge="1" parent="1" source="cell_resize" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#000000;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cell_i-inc" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_e11" edge="1" parent="1" source="cell_space" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#000000;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cell_j-inc" value="否">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_e14" edge="1" parent="1" source="cell_k-init" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#000000;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cell_k-test" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_e15" edge="1" parent="1" source="cell_k-test" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#000000;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cell_copy" value="是">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cell_e16" edge="1" parent="1" source="cell_copy" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#000000;fontFamily=Microsoft YaHei;fontSize=15;fontColor=#000000;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cell_k-inc" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
