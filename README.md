@@ -7,7 +7,7 @@
 在 Codex 中选择“Algorithm Flowchart Drawing”，或直接输入：
 
 ```text
-使用 $openai.yaml，为这个函数绘制算法流程图。
+使用 $algorithm-flowchart-drawing，为这个函数绘制算法流程图。
 ```
 
 提供待绘制的源代码；如有报告正文、绘图规范或参考图片，也可以一并提供。可以指定字号、纸张尺寸、详略程度和导出格式。
