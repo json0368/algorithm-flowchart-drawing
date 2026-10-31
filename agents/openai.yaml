@@ -1,4 +1,4 @@
 interface:
   display_name: "Algorithm Flowchart Drawing"
   short_description: "根据源代码绘制详细中文流程图，兼顾报告结构、十五号字与整页可读性"
-  default_prompt: "使用 $report-algorithm-flowcharts，根据源代码和报告要求，绘制适合插入报告的 draw.io 算法流程图；未指定样式时，采用本 skill 的默认规格。"
+  default_prompt: "使用 $algorithm-flowchart-drawing，根据源代码和报告要求，绘制适合插入报告的 draw.io 算法流程图；未指定样式时，采用本 skill 的默认规格。"
